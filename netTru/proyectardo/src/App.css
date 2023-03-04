@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Golos Text', sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #12376e;
+    align-items: center;
+    
+    width: 100%;   
+   
+}
+
+header img{
+    width: 4rem;
+    padding: .5em;
+}
+
+header form{
+    margin-right: 3rem;
+}
+
+header form input{
+    border-radius: 3px;
+    border: 0;
+    padding: 5px;
+    width: 300px;
+    outline: none;
+}
+
+header form button{
+    padding: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #02496e;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background-color ease-in-out .1s;
+}
+
+header form button:hover{
+    background-color: #3be0dc;
+}
+
+main{
+    display: flex;
+    
+    margin: 50px;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    max-width: 300px;
+    height: 100%;
+    width: 100%;
+   
+}
+
+.buttonOrderBy{
+    display: flex;
+}
+
+.movies {
+    display: flex;
+    flex-wrap: wrap;
+    
+    list-style: none;
+    padding: 0 0 0 50px;
+    margin: 0;
+    gap: 20px;
+}
+
+.card-movie{
+    height: auto;
+    width: 200px;
+    box-shadow: 0 0 5px 1px #777;
+    border-radius: 10px;
+    overflow-wrap: break-word;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.card-movie p{
+    padding: 5px;
+}
+
+.card-movie .title{
+    overflow-wrap: break-word;
+}
+
+.card-movie .date{
+    font-size: 13px;
+    color: #777;
+}
+
+.notMovies{
+    font-size: 40px;
+    text-align: center;
+}
+
+
+.categorias{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.genreButton{
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 5px;
+    width: 130px;
+    box-shadow: 0 0 3px 1px #000;
+    margin: 7px;
+    cursor: pointer;
+}
+
+.genreButton:hover{
+    background-color: #3be0dc;
+    color: white;
+    transform: scale(1.1);
+}
+
+.languageChoose{
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    outline: none;
+    
+}
+.buttons{
+    margin: 20px 0 20px 0;
+}
+
+.buttonOrderBy{
+    margin-top: 5px;
+    width: 200px;
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.buttonOrderBy:hover, .range button:hover, .dates button:hover{
+    background-color: #02496e;
+    color: white;
+}
+
+.rango{
+    margin: 20px 0 20px 0;
+    
+}
+
+.range{
+    margin: 20px 0 20px 0;
+}
+
+.range button{
+    padding: 5px;
+    transform: translateY(-2px);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+    background-color: #3be0dc;
+}
+
+.dates button{
+    padding: 4px;
+    border: none;
+    cursor: pointer;
+    background-color: #3be0dc;
+    
+}
+
+.sectionMovies{
+    margin-left: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vote_average{
+    align-self: flex-end;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background-color: #000;
+    border-top-left-radius: 12px;
+}
+
+.pageButtons{
+   
+    margin-top: 20px;
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+    
+}
+
+.pageButtons button{
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    width: 50px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.header__li{
+    display: inline-block;
+    margin: 10px 20px 10px 10px;
+}
+
+.header__A{
+    text-decoration: none;
+    color: white;
+}
+
+.header__A:hover{
+    color: #000;
+}
+
+.logo_list{
+    display: flex;
+    align-items: center;
+}
+
+.home_main{
+    height: 40vh;
+    background-color: #02496e;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+}
+
+.home_main div{
+    margin: 50px;
+}
+
+.home_main h1{
+    
+    font-size: 50px;
+}
+
+.home_main p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.trend_section{
+    display: flex;
+    height: 50vh;
+    background-color: #009cd8;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.cardMovie{
+    display: flex;
+    height: 360px;
+    background-color: white;
+    margin: 50px;
+}
+
+.people{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 70px;
+  margin: 30px;
+}
+
+.peopleCard{
+  box-shadow: 0 2px 5px 1px #666;
+  width: 240px;
+  height: 420px;
+  overflow: hidden;
+}
+
+.peopleCard img{
+  width: 100%;
+}
+
+.peopleData{
+  padding: 3px 5px 5px 5px;
+}
+
+.peopleData p:first-child{
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 3px;
+}
+
+.peopleTitle{
+    padding: 15px 0 10px 27px;
+}
+
+.card-movie{
+    text-decoration: none;
+    color: black;
+}
+
+.firstData{
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.a{
+    height: 60vh;
+    background-color: #02496e;
+    width: 100%;
+    overflow: hidden;
+}
