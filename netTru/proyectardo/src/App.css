@@ -316,15 +316,163 @@ aside{
     color: black;
 }
 
+
 .firstData{
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 60vh;
+    background-color: #143970;
+    display: flex;
+  
+    align-items: center;
+}
+
+.firstData img{
+    width: 320px;
+    margin-left: 200px;
+    border-radius: 15px;
+}
+
+.secondData{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: white;
+}
+
+.movieTitle{
+    font-size: 40px;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+}
+
+.movieTitle:Hover{
+    opacity: .7;
+}
+
+.secondData span{
+    color: #999;
+    font-weight: 100;
+    opacity: .7;
+}
+
+.genres{
+    font-size: 15px;
+    color: #ffffff;
+    display: flex;
+}
+
+.genres span{
+    color: white;
+}
+
+.vote_average_detail{
+    padding: 10px;
+    border: 5px solid #21d07a;
+    border-radius: 50%;
+    width: 28px;
+    font-weight: bolder;
+    font-size: 18px;
+    background-color: black;
+    display: inline;
+    margin: 10px;
+}
+
+.thirdData{
+    display: flex;
+    align-items: center;
+}
+
+.thirdData button{
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    width: 100px;
+    font-weight: 500;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.thirdData button:Hover{
+    opacity: .7;
+}
+
+.closeButton{
+    background-color: transparent;
+    border: none;
+    padding: 0 0 10px 0;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+.closeButton:hover{
+    opacity: .7;
+}
+
+.tagline{
+    opacity: .6;
+    margin-bottom: 15px;
+}
+
+.VistaGeneral{
+    font-weight: 500;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.overview{
+    font-size: 15px;
+    font-weight: 100;
+    opacity: .8;
+}
+
+.director{
+    margin-top: 20px;
+
+}
+
+.director a{
+    text-decoration: none;
+    color: white;
+}
+
+.director a:Hover{
+    opacity: .7;
+}
+
+.director p:last-child{
+    opacity: .7;
+    font-size: 15px;
+}
+
+.castSection{
+    height: 70vh;
+}
+.castSection h1{
+    padding: 20px;
+    font-size: 20px;
+}
+
+.actorCards{
+    display: flex;
+    margin-left: 20px;
+    gap: 20px;
+    height: 340px;
+}
+
+.actorCards img{
+    border-radius: 10px; 
+    height: 250px;
+}
+
+.actorCard{
+    border-radius: 10px; 
+    box-shadow: 0 2px 5px 1px #999;
+    text-decoration: none;
+    color: black;
     
 }
 
-.a{
-    height: 60vh;
-    background-color: #02496e;
-    width: 100%;
-    overflow: hidden;
+.actorData{
+    padding: 10px;
 }
