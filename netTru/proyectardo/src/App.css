@@ -47,13 +47,13 @@ header form button:hover{
     background-color: #3be0dc;
 }
 
-main{
+.popularMain{
     display: flex;
     
     margin: 50px;
 }
 
-aside{
+.popularAside{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -225,13 +225,17 @@ aside{
     margin: 10px 20px 10px 10px;
 }
 
+.header__li:first-child{
+    margin-left: 50px;
+}
+
 .header__A{
     text-decoration: none;
     color: white;
 }
 
-.header__A:hover{
-    color: #000;
+.header__li:hover{
+    transform: scale(1.1);
 }
 
 .logo_list{
@@ -291,6 +295,13 @@ aside{
   width: 240px;
   height: 420px;
   overflow: hidden;
+  text-decoration: none;
+  color: black;
+  transition: transform ease .3s;
+}
+
+.peopleCard:hover{
+    transform: scale(1.01);
 }
 
 .peopleCard img{
@@ -446,33 +457,208 @@ aside{
 }
 
 .castSection{
-    height: 70vh;
+    height: 50vh;
+    margin-left: 160px;
+    width: 70vw;
 }
 .castSection h1{
     padding: 20px;
     font-size: 20px;
+    margin-left: 20px;
 }
 
 .actorCards{
     display: flex;
     margin-left: 20px;
     gap: 20px;
-    height: 340px;
+    height: auto;
+    overflow-x: scroll;
+    width: auto;
+    
+    
 }
 
 .actorCards img{
     border-radius: 10px; 
-    height: 250px;
+    height: 200px;
+    width: 150px;
+    object-fit: cover;
+    
+    
 }
 
 .actorCard{
     border-radius: 10px; 
-    box-shadow: 0 2px 5px 1px #999;
+    box-shadow: 0 1px 4px 1px #999;
     text-decoration: none;
     color: black;
+    margin-bottom: 10px;
     
+}
+.actorCard:first-child{
+    margin-left: 20px;
+}
+.actorCard:last-child{
+
+    margin-right: 20px;
 }
 
 .actorData{
     padding: 10px;
+}
+
+
+.actorCard p:last-child{
+    opacity: .5;
+}
+
+.container{
+    display: flex;
+}
+
+.runtime{
+    margin-left: 10px;
+    opacity: .9;
+}
+
+.aside_data{
+    padding: 60px 0 0 50px;
+    
+}
+
+.aside_data p{
+    padding: 0 0 35px 0;
+    font-size: 15px;
+    opacity: .7;
+}
+
+.aside_data h4{
+    font-weight: bold;
+}
+
+.mediaSection{
+    height: 50vh;
+    margin-left: 160px;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.mediaSection h3{
+    padding: 20px;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.videos, .posters, .images{
+    display: flex;
+    margin-left: 30px;
+    gap: 5px;
+    height: auto;
+    overflow-x: scroll;
+    width: auto;
+    height: 210px;
+}
+
+.videoButton:Hover, .backdropButton:Hover, .posterButton:Hover{
+   text-decoration: underline 3px;
+   
+}
+
+.mediaSection .li{
+    display: flex;
+    align-items: center;
+}
+
+.mediaSection ul{
+    display: flex;
+    list-style: none;
+    margin: 10px;
+}
+
+.mediaSection ul li{
+    margin: 10px;
+}
+
+.mediaSection button{
+    border-radius: 10px;
+    border: none;
+    width: 100px;
+    height: 30px;
+    background: transparent;
+    color: black;
+    cursor: pointer;
+    font-size:17px;
+}
+
+.peopleMain{
+    height: 100vh;
+    display: flex;
+}
+
+.peopleMain aside{
+    width: 30vw;
+    display: flex;
+    
+    align-items: center;
+    flex-direction: column;
+} 
+
+.info{
+
+    margin-top: 50px;
+}
+.peopleMain aside img{
+   margin-top: 50px;
+    border-radius: 30px;
+}
+.peopleMain aside h2{
+    font-weight: 100;
+}
+.peopleMain aside h3{
+    font-weight: bold;
+    margin-top: 30px;
+    
+    
+}
+
+.alsoKnown{
+    margin-bottom: 50px;
+}
+
+.peopleMain section{
+    width: 50vw;
+    margin-top: 50px;
+}
+
+.peopleMain section h1{
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.peopleMain section h2{
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.peopleMain section .biografia{
+    color: #666;
+    margin: 20px 0px;
+}
+
+.knownby{
+    display: flex;
+    margin: 30px 0;
+    overflow-x: scroll;
+    gap: 20px;
+}
+
+.peliCard p{
+    text-align: center;
+}
+
+.peliCard img{
+    width: 150px;
+    border-radius: 20px;
 }

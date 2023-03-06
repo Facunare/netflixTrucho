@@ -91,8 +91,8 @@ function PeliculasPopulares() {
     return (
       <div>
         <NavBar searchMovies={searchMovies} setSearch={setSearch}/>
-        <main>
-          <aside>
+        <main className='popularMain'>
+          <aside className='popularAside'>
             <select name="" id="" onChange={byLanguage} className='languageChoose'>
               {languages.map(lang => (
 

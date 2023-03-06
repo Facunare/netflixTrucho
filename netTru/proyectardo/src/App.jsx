@@ -6,8 +6,8 @@ import Home from './Pages/Home'
 import EnCartelera from './Pages/EnCartelera'
 import NextMovies from './Pages/NextMovies'
 import People from './Pages/People'
-import MovieDetails from './components/MovieDetails';
-import PeopleDetails from './components/PeopleDetails';
+import MovieDetails from './Pages/MovieDetails';
+import PeopleDetails from './Pages/PeopleDetails';
 function App() {
   
     return (
